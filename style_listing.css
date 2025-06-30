@@ -1,79 +1,58 @@
-    body {
+
+    .body {
       margin: 0;
       padding: 0;
-      font-family: 'Georgia', serif;
-      color: #111;
-      background-color: #000000;
-    }
-
-    .main-wrapper {
-      width: 100%;
-      max-width: 1425px; 
-      margin: 0 auto; 
-      background-color: #ffffff;
-      min-height: 100vh;
-      box-sizing: border-box;
-    }
-
-    .container {
-      width: 100%;
+      /* width: 1440px; */
       max-width: 100%;
-      margin: 0 auto;
-      overflow: hidden
     }
 
     .header {
       background-color: #fff;
       width: 100%;
-      max-width: 1440px;
       height: 133px;
       border-bottom: 1px solid #ccc;
-      display: flex;
-      padding: 0 60px;
-      /* align-items: center; */
       box-sizing: border-box;
-      font-weight: bold;
+    }
+
+    .header-container {
+      /* width: 1315.42px; */
+      width: auto;
+      /* height: 40.46px; */
+      display: flex;
+      align-items: center;
+      padding-top: 52.54px;
+      padding-left: 63.58px;
       justify-content: space-between;
     }
 
-    .logo-box {
-        width: 395.83px;
-        height: 37.53px;
-        overflow: hidden;
-        position: relative;
-    }
-
     .logo {
-      white-space: nowrap;
         font-family: 'Cormorant Garamond', serif;
         font-size: 50px;              
         letter-spacing: 6px;                      
         text-transform: uppercase;    
-        color: #000000;
-        margin: 0;
-        display: inline-block;
-        margin-top: 40px;
+        font-weight: bold;
+        height: 37.53px;
+        display: flex;
+        align-items: center;
     }
 
     .menu-icon {
       display: none;
-      font-size: 32px;
+      font-size: 42px;
       cursor: pointer;
       color: #000;
-      margin-top: 40px;
       width: 24px;
       height: 14px;
     }
 
     .nav {
         display: flex;
+        width: 443px;
+        height: 40.46px;
+        align-items: center;
+        padding-top: 6.46px;
     }
 
-    .nav-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .nav-item a {
         font-family: 'EB Garamond', serif;
@@ -84,7 +63,6 @@
         color: #000;
         text-decoration: none;
         position: relative;
-        padding-bottom: 6px;
         font-weight: bold;
     }
 
@@ -94,217 +72,196 @@
         bottom: -40px;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: 1.5px;
         background-color: #000;
     }
 
-    .nav-item.blog {
-        width: 66px;
-        height: 34px;
-        top: 59px;
-        left: 9px;
-        margin-left: 476.59px;
-        margin-top: 59px;
-    }
-
     .nav-item.about {
-        width: 84px;
-        height: 34px;
-        top: 59px;
-        left: 1033px;
         margin-left: 31px;
-        margin-top: 59px;
     }
 
     .nav-item.links {
-        width: 71px;
-        height: 34px;
-        top: 59px;
-        left: 1151px;
         margin-left: 34px;
-        margin-top: 59px;
     }
 
     .nav-item.projects {
-        width: 121px;
-        height: 34px;
-        top: 59px;
-        left: 1258px;
         margin-left: 36px;
-        margin-top: 59px;
     }
 
-    .hero {
-      text-align: center;
+    .intro {
+      height: 949px;
+      box-sizing: border-box;
     }
 
-    .hero img {
+    .intro-container {
+      width: 854px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      padding-top: 76px;
+      padding-bottom: 34px;
+    }
+
+    .img-hero {
       width: 100%;
-      max-width: 854px;
-      height: auto;
-      display: block;
-      margin: 76px auto 0;
-      
+      height: auto; 
+      max-width: 100%;
     }
 
-    .hero h2 {
-        width: 858px;
-        margin: 44px auto 0;
-        font-family: 'Playfair Display', serif;
-        font-size: 54px;
-        text-align: center;
+    .main-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 54px;
+      font-weight: 700px;
+      text-align: center;
+      margin-top: 44px;
+      margin-bottom: 0;
+      width: 100%;
+      height: 162px;
+      display: flex;
+      align-items: center;
     }
 
-    .hero p {
-      width: 552px;
-      height: 68px;
-      margin: 32px auto 0;
+    .subtitle {
       font-family: 'IBM Plex Mono', monospace;
-      font-weight: 400;
+      font-weight: 400px;
       font-size: 20px;
       line-height: 170%;
-      letter-spacing: 0%;
       text-align: center;
-      color: #000000;
-    
+      margin-top: 32px;
+      margin-bottom: 0;
+      width: 592px;
     }
-
+    
     .custom-line {
-      width: 640px;
-      height: 0;                  
-      margin: 34px auto 0;
-      left: 400px;
+      width: 640px;                 
+      margin: 0 auto;
       border-top: 2px solid #000;     
     }
 
-
-
-    .tag {
-      font-weight: bold;
-      color: #000;
+    .art-content {
+      margin: 0;
+      width: 100%;
+      height: auto;
     }
 
-    .articles {
-      /* position: relative; */
-      min-height: 2000px; 
+    .art-container {
+      width: 640px;
+      height: auto;
+      padding: 64px 0 113px;
+      margin: auto;
     }
 
 
-    .articles h3 {
-      width: 225px;
+    .art-container h3 {
+      width: 100%;
       height: 53px;
-      margin: 64px auto 0;
-
       font-family: 'Playfair Display', serif;
       font-weight: 700;
       font-size: 44px;
       line-height: 100%;
       letter-spacing: 0;
+      margin: 0 0 39px;
+      text-align: center;
     }
-    
 
     .grid {
-      margin-top: 39px;
       display: grid;
       grid-template-columns: repeat(2, 304px);
-      gap: 40px 28px;
+      gap: 64px 28px;
       justify-content: center;
     }
 
-    .article-card {
-      text-align: center;
-      width: 304px;
-      margin: 0 auto;
+    .art-desktop {
+      display: block;
+    }
+
+    .art-mobile {
+      display: none;
     }
     
-    .article-card img {
+    .article-card1 img {
       width: 304px;
       height: 176px;
       aspect-ratio: 19 / 11;
       display: block;
-      margin-top: 20px;
-      margin-bottom: 28px;
+      margin: 0;
     }
 
-
-
-    .article-card p {
+    .card-content1 {
       width: 262px;
-      height: 78px;
+      height: 104px;
       font-size: 22px;
       font-family: 'SF Pro Display', serif;
       line-height: 1.4;
       text-align: center;
-      display: block;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
+      padding: 20px 21px 0;
+      margin: 0;
+      display: flex;
+      text-align: center;
     }
 
     .footer {
       background-color: #000;
-      width: 100%;
+      width: auto;
       box-sizing: border-box;
       color: #fff;
       text-align: center;
       font-family: 'Georgia', serif;
-      padding-top: 18px;
-      margin-top: 113px;
-    }
-
-    .footer-tags-wrapper {
+      height: 464px;
       overflow: hidden;
-      width: 100%;
     }
 
+    .content-footer {
+      width: 100%;
+      padding: 18px 0 32px;
+    }
 
     .footer-tags {
       font-family: 'Inter', sans-serif;
       font-size: 20px;
       color: #fff;
       text-transform: uppercase;
-      display: inline-block;
+      display: inline-flex;
       flex-wrap: nowrap;
       justify-content: center;
       line-height: 28px;
       max-width: 100%;
-      /* overflow: hidden; */
-      letter-spacing: 2px;
-      white-space: nowrap; 
-      animation: scroll-x 50s linear infinite;
+      overflow: hidden;
+      letter-spacing: 3px;
+      white-space: nowrap;
     }
 
-    @keyframes scroll-x {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
 
     .tag {
       display: inline-block;
       max-width: 100%;
       color: #fff;
-      font-weight: normal
+      font-weight: normal;
+      height: 28px;
     }
 
     .bold {
       font-weight: bold;
     }
 
+    .footer-cap {
+      width: 481px;
+      margin: 105.12px auto 64px;
+    }
 
-    .footer-center h2 {
+
+    .footer-logo {
       font-family: 'Cormorant Garamond', serif;
       font-size: 35px;
       letter-spacing: 4px;
-      margin-top: 105.12px;
+      margin: auto 0;
+      /* height: 27.3px; */
     }
 
-    .footer-center p {
+    .footer-sub {
       font-family: 'New York Small';
-      max-width: 488px; 
+      width: 488px; 
       font-size: 16px;
       font-weight: 400;
       line-height: 140%;
@@ -313,8 +270,8 @@
     }
 
     .footer-links {
-      /* display: flex; */
       flex-wrap: nowrap;  
+      margin: 0;
     }
 
     .footer-links a {
@@ -343,99 +300,100 @@
       font-weight: 500px;
       line-height: 140%;
       color: #ffffff;
-      margin-top: 64px;
-      margin-bottom: 32px;
+      margin: 0;
     }
 
 
 @media (max-width: 768px) {
+
+  .header {
+      height: 110px;
+      display: flex;
+      align-items: center;
+    }
+    
+
   .menu-icon {
     display: block;
-
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
   }
 
   .nav {
     display: none; 
   }
 
-  .header {
-    padding: 0 24px;
-    height: 100px;
+  .header-container {
+    height: auto; 
+    padding: 16px 20px;
+    width: 100%;
   }
-
-  .logo-box {
-    width: 217px;
-    height: 20px;
-    overflow: hidden;
-    position: relative;
-    }
 
   .logo {
     font-size: 35px;
     letter-spacing: 2px;
-    margin-top: 40px;
   }
-}
 
-@media (max-width: 768px) {
-  .hero h2 {
+  .intro-container {
     width: 100%;
-    font-size: 36px;
-    padding: 12px 40px 10px;
-    text-align: center;
-    margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
   }
-}
 
- @media (max-width: 768px) {
-  .hero p {
+  .img-hero {
     width: 100%;
-    font-size: 16px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-top: 64px;
+  }
+
+  .main-title {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .subtitle {
+    width: 80%;
+    font-size: 18px;
     padding: 0 20px;
     line-height: 170%;
     font-weight: 400;
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 24px;
     box-sizing: border-box;
   }
-} 
-
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 335px; 
-    gap: 40px; 
+  .custom-line {
+    width: auto;
   }
 
-  .article-card {
-    width: 100%;
+
+  .footer{
+    overflow-x: hidden;
   }
 
-  .article-card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .article-card p {
-    width: 100%;
-    padding: 0 40px;
-    font-size: 22px;
-    box-sizing: border-box;
-  }
-}
-
-
-    @media (max-width: 768px) {
   .footer-tags {
-    font-size: 14px;
+    font-size: 16px;
     gap: 6px 10px;
   }
 
-  .footer-center h2 {
+  .footer-cap {
+    width: auto;
+  }
+
+  .footer-sub {
+    width: auto;
+  }
+
+  .footer-logo {
     font-size: 30px;
   }
 
-  .footer-center p {
+  .footer-sub {
     font-size: 13px;
     padding: 0 62px;
   }
@@ -458,4 +416,89 @@
     font-size: 12px;
     padding: 0 12px;
   }
-} 
+
+  .art-container {
+    width: auto;
+  }
+  .grid {
+    display: block;
+    padding: 0 16px;
+  }
+
+  .art-desktop {
+    display: none;
+  }
+
+  .art-mobile {
+    display: block;
+  }
+
+  .article-card2 {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .article-card2 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    /* aspect-ratio: 19 / 11; */
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card-content2 {
+    font-size: 20px;
+    font-family: 'SF Pro Display', serif; 
+    line-height: 1.4;
+    padding: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1021px) {
+  .nav {
+    display: none; 
+  }
+
+  .menu-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 432px) {
+
+  .logo {
+    font-size: 27px;
+  }
+
+  .img-hero {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-top: 52px;
+  }
+
+  .main-title {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .subtitle {
+    width: 80%;
+    font-size: 16px;
+    padding: 0 20px;
+    line-height: 170%;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+  }
+}
